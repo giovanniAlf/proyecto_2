@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Póngase en contacto con nosotros</p>
+        </div>
+        <nav>
+            <div class="logo">Genesis</div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#cart">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="banner">
+            <div class="banner-text">
+                <h1>COLECCIÓN NEW GENESIS POR ESTE VERANO</h1>
+                <p>Descubra la colección especial Genesis por este verano</p>
+                <div class="buttons">
+                    <button class="active">Hombre</button>
+                    <button>Mujer</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Productos</h2>
+            <div class="product-grid">
+                <div class="product" data-id="1">
+                    <div class="image-container">
+                        <img src="Hoodie-front.png" alt="Hoodie Front" class="front">
+                        <img src="Hoodie-back.png" alt="Hoodie Back" class="back">
+                    </div>
+                    <h3>Hoodie Genesis</h3>
+                    <p>Precio: $$$$</p>
+                    <button onclick="addToCart(1, 'Hoodie', 200)">Añadir al Carrito</button>
+                </div>
+                <div class="product" data-id="2">
+                    <div class="image-container">
+                        <img src="Chaleco-front.png" alt="Chaleco Front" class="front">
+                        <img src="Chaleco-back.png" alt="Chaleco Back" class="back">
+                    </div>
+                    <h3>Chaleco Genesis</h3>
+                    <p>Precio: $120</p>
+                    <button onclick="addToCart(2, 'Chaleco', 120)">Añadir al Carrito</button>
+                </div>
+                <div class="product" data-id="3">
+                    <div class="image-container">
+                        <img src="Camisa-front.png" alt="Camisa Front" class="front">
+                        <img src="Camisa-back.png" alt="Camisa Back" class="back">
+                    </div>
+                    <h3>Camiseta Genesis</h3>
+                    <p>Precio: $90</p>
+                    <button onclick="addToCart(3, 'Camisa', 90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
