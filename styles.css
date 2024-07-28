@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f8f8;
+    background-color: gray;
     color: #333;
 }
 
 .top-bar {
-    background-color: #fff;
+    background-color: gray;
     color: #000;
     text-align: center;
     padding: 0.5rem;
